@@ -1,16 +1,7 @@
-﻿int[] input = new int[] {
-199,
-200,
-208,
-210,
-200,
-207,
-240,
-269,
-260,
-263
-};
+﻿int[] input = day1.input.Input;
 int result = 0;
+System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+sw.Start();
 for (int i = 1; i < input.Length; i++)
 			{
 	if (input[i] > input[i-1])
@@ -18,5 +9,6 @@ for (int i = 1; i < input.Length; i++)
 		result++;
 	}
 			}
-Console.WriteLine(result);
+sw.Stop();
+Console.WriteLine($"result: {result} time: {sw.Elapsed}");
 Console.ReadLine();
