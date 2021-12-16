@@ -14,4 +14,4 @@ for (int i = 3; i < input.Length; i++)
 }
 sw.Stop();
 Console.WriteLine($"result: {result} time: {sw.Elapsed}");
-Console.ReadLine();
+Console.ReadLine();//
