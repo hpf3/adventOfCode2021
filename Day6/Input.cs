@@ -1,7 +1,7 @@
 ﻿
 namespace ChallengeDay6
 {
-    internal class Input
+    public class Input
     {
         public static string[] Demo { get => @"3,4,3,1,2".Split(',',StringSplitOptions.RemoveEmptyEntries); }
 
